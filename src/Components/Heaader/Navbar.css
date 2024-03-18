@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 0.5px solid #00000043;
+}
+.navbar__container {
+  display: flex;
+  width: 90%;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger__icon {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar__logotitle {
+  display: flex;
+  margin-left: 160px;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 800;
+
+  font-family: lato, sans-serif;
+}
+.navbar__icon {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lang {
+  font-size: 20px;
+}
+.icon {
+  margin: 5px;
+  font-size: 20px;
+}
+.navbar__lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__components {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  font-family: lato, sans-serif;
+  transition: all 0.3s ease;
+  display: flex;
+}
+.navbar__components.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 450px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #00000043;
+}
+
+.navbar__shop {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .navbar__container {
+    gap: 20px;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .hamburger__icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar__components {
+    display: none;
+  }
+  .navbar__lang {
+    display: none;
+  }
+  .navbar__icon {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    width: 35%;
+  }
+  .navbar__logotitle {
+    font-size: 28px;
+    margin-left: 0px;
+  }
+  .nav__logo {
+    width: 30px;
+    height: 30px;
+  }
+}

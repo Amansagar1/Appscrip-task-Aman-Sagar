@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.main__titlebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: lato, sans-serif;
+}
+.main__heading {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.main__paragraph {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main__indicaterbox {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 1px 0px #000;
+  padding: 20px;
+}
+
+.indicator__counting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.filter__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a7a7a7;
+}
+.indicator__recomanded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: po;
+}
+.recommend__btn {
+  border: none;
+  background: none;
+  font-weight: 600;
+}
+.dropdown-content {
+  display: block;
+  justify-content: center;
+  top: 50px;
+  position: absolute;
+  background-color: #fff;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  margin: 5px;
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content.show {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .main__indicaterbox {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+  }
+
+  .indicator__counting {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .iteam__count {
+    display: none;
+  }
+}
